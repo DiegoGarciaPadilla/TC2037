@@ -1,0 +1,31 @@
+1. Para verificar que la cadena contiene la matrícula de un alumno del Tec.
+
+(A|a)\d{8}
+
+2. Para verificar que una cadena contenga solo un determinado conjunto de caracteres (en este caso, a-z, A-Z y 0-9).
+
+^[a-zA-Z0-9]+
+
+3. Para verificar que coincida con una cadena que tenga una a seguida de tres b.
+
+.*abbb.*
+
+4. Que coincida con una cadena que tenga una a seguida de cualquier cosa que termine en b.
+
+.*a.+b\Z
+
+5. Que coincida con una palabra al final de una cadena, con puntuación opcional.
+
+.*([a-zA-Z]+)(|.)\Z
+
+6. Para buscar números (0-9) de longitud entre 1 y 3 en una cadena determinada.
+
+.*([0-9]{1,3}).*
+
+7. Que coincida con una palabra que contenga z, no el principio o el final de la palabra.
+
+[^z]+\Bz\B[^z]+
+
+8. Para buscar un número al final de una cadena.
+
+.*([0-9])\Z
