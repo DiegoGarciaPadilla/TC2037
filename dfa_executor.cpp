@@ -43,6 +43,7 @@ int main(int argc, char* argv[]) {
 
 		i = 0;
 		state = 0;
+		isFloat = false;
 		while (state < 100) {
 			c = input[i++];
 			state = MT[state][convert(c)];
